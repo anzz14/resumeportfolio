@@ -37,7 +37,7 @@ body {
   margin: 10px;
 }
 .profile-section-image {
-  width: 75px;
+  width: 100px;
   scale: 1;
   border-radius: 50%;
 }
@@ -219,6 +219,38 @@ body {
 }
 .solar-wrapper:hover {
    border: 1px solid rgba(0,110, 255, .5);
+}
+
+.admybrand-wrapper:hover {
+  border: 1px solid white;
+}
+
+.admybrand-tag {
+  float: right;
+  padding: 10px;
+  letter-spacing: -1px;
+  color: white;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.focusing-wrapper:hover {
+  border: 1px solid #6366f1;
+}
+
+.focusing-tag {
+  float: right;
+  padding: 10px;
+  letter-spacing: -1px;
+  color: #6366f1;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 
 .level-tags {

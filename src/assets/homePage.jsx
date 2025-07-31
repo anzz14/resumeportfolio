@@ -33,11 +33,11 @@ export default function HomePage() {
             transition={{ duration: 1.5, ease: "easeOut" }}
           >
             <img
-              src="https://dqy38fnwh4fqs.cloudfront.net/UHR86GLDMJPL8MGIR6MOOLOROQKL/hr86gldmjpl8mgir6mooloroqkl-4687-profile.webp"
+              src="/profile.jpg"
               alt="Profile"
               className={`profile-section-image ${isSticky ? 'smallIcon' : ''}`}
             />
-            <h2 className={`profile-title ${isSticky ? 'smallText' : ''}`}>Ayan Ahmad Khan</h2>
+            <h2 className={`profile-title ${isSticky ? 'smallText' : ''}`}>Anas Najam</h2>
             {!isSticky && (
               <motion.p
                 className="profile-desc"
@@ -46,11 +46,11 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ duration: 1.2 }}
               >
-                Hey there! I'm Ayan Ahmad Khan, a passionate <span>MERN stack</span> developer.
+                Hey there! I'm Anas Najam, a passionate <span>MERN stack</span> developer.
               </motion.p>
             )}
 
-            <h6 className={`location ${isSticky ? 'left-badge' : ''}`}><MapPin size={18}/> Bengaluru, India</h6>
+            <h6 className={`location ${isSticky ? 'left-badge' : ''}`}><MapPin size={18}/> Jaipur, India</h6>
 
             {isSticky && (
               <motion.div
@@ -59,13 +59,13 @@ export default function HomePage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2 }}
               >
-                <a href="https://x.com/DevLegend_" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/anzz14___" target="_blank" rel="noopener noreferrer">
                   <Twitter size={18} />
                 </a>
-                <a href="https://github.com/AyanAhmadKhan01" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/anzz14" target="_blank" rel="noopener noreferrer">
                   <Github size={18} />
                 </a>
-                <a href="https://linkedin.com/in/ayanahmadkhan" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/anas-najam-78096b237/" target="_blank" rel="noopener noreferrer">
                   <Linkedin size={18} />
                 </a>
               </motion.div>
@@ -81,46 +81,34 @@ export default function HomePage() {
           >
             Projects <h2 className="badge-projects">
   <CalendarDays className="project-icon" size={18} />
-  2023 – <span> Present</span>
+  2024 – <span> Present</span>
 </h2>
           </motion.h3>
 
 
           <div className="grid-container">
             {[
-               {
-                href: "https://flexreadme.vercel.app",
+              {
+                href: "https://a-dmy-brand-omega.vercel.app/",
                 tag: "Completed",
-                title: "FlexReadme",
-                desc: "A GitHub README generator powered by AI that creates polished, context‑aware documentation in seconds.",
-                tags: ["#Typescript", "#Next.js", "#Tanstack Query", "#Tailwind", "#ShadCn", "#Zod", "#PostgreSQL", "#Redis", "AI"],
-                image: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1753826538/mfklkupr91xulljkdsc4.png",
-                wrapperClass: "flexreadme-wrapper",
-                   timeline: 'August 2025',
-                tagClass: "flexreadme-tag",
+                title: "ADmyBRAND",
+                desc: "A modern brand management platform designed to help businesses create, manage, and showcase their brand identity effectively.",
+                tags: ["#NextJs","#Typescript", "#TailWind", "#Express", "#Nodejs", "#MongoDB"],
+                image: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1753974212/rvmxpnc5ch3nktubuxg4.png",
+                wrapperClass: "admybrand-wrapper",
+                timeline: 'January 2025',
+                tagClass: "admybrand-tag"
               },
-               {
-                href: "https://ayancodes.vercel.app",
+              {
+                href: "https://focusing-forward.vercel.app",
                 tag: "Completed",
-                title: "ayan.codes",
-                desc: "A minimal and personal blog website focused on clean design, smooth reading experience, and thoughtful content presentation.",
-                tags: ["#Next.js", "#Tailwind", "#Next-Auth", "#ShadCn", "#Quill", '#Tanstack Query', "#react-hook-form", "#mongoose"],
-                image: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1753644735/c3keivnyaqd17kkjdpbw.png",
-                wrapperClass: "level-card-wrapper",
-                   timeline: 'July 2025',
-                tagClass: "dev-tag",
-              },
-               {
-                href: "https://solar-system-three-js-eight.vercel.app",
-                tag: "Completed",
-                title: "Solar System 3D",
-                desc: "A visually interactive 3D simulation of the solar system built with Three.js. It features orbiting planets, dynamic controls, and an immersive space environment designed for educational and exploratory purposes.",
-                tags: ["#Three.js", "#Javascript" ,"#HTML", "#CSS"],
-                image: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1751898048/rzwmyoq0ainoazczpzqn.png",
-                wrapperClass: "solar-wrapper",
-                   timeline: 'July 2025',
-                tagClass: "solar-tag",
-
+                title: "Focusing Forward",
+                desc: "A training platform for ADHD diagnostic people and educational resource for teachers to understand and support ADHD students effectively.",
+                tags: ["#NextJs", "#TailWind", "#Express", "#Nodejs", "#MongoDB"],
+                image: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1753974163/fpsiaypa5x7kkqcd6yvv.png",
+                wrapperClass: "focusing-wrapper",
+                timeline: 'December 2024',
+                tagClass: "focusing-tag"
               },
               {
                 href: "https://messmanagement.vercel.app",
@@ -130,21 +118,8 @@ export default function HomePage() {
                 tags: ["#NextJs", "#Shadcn" ,"#TailWind", "#Express", "#Nodejs", "#MongoDB"],
                 image: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1751288371/nrdtax7jdqcvhwde0xiu.png",
                 wrapperClass: "mess-wrapper",
-                   timeline: 'June 2025 - Present ',
+                timeline: 'June 2025 - Present ',
                 tagClass: "mess-tag",
-
-              },
-              {
-                href: "https://levelcard.vercel.app",
-                tag: "Under Development",
-                title: "Level Card",
-                desc: "A no-code platform to build and deploy your portfolio in one click, featuring built-in analytics and messaging tools.",
-                tags: ["#NextJs", "#TailWind", "#Redux", "#Express", "#Nodejs", "#MongoDB"],
-                image: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1748003658/aabeefcnbg3iphuce1fe.png",
-                wrapperClass: "level-card-wrapper",
-                tagClass: "dev-tag",
-                timeline: 'Feb 2025 - Present ',
-                titleSpanClass: "lvl-span"
               },
               {
                 href: "https://dreamwallv2.vercel.app/home",
@@ -154,30 +129,8 @@ export default function HomePage() {
                 tags: ["#ReactJs", "#Css", "#Express", "#Nodejs", "#MongoDB"],
                 image: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1748005188/thceyarmn8dld2glwe7w.png",
                 wrapperClass: "dream-wrapper",
-                   timeline: 'November 2024 - January 2025',
+                timeline: 'November 2024 - January 2025',
                 tagClass: "dreamwall"
-              },
-              {
-                href: "https://kadogg.vercel.app/",
-                tag: "Completed",
-                title: "Kado.gg",
-                desc: "A guide website dedicated to Kado Bot, offering in-depth explanations of its Discord commands, rules, and card showcases.",
-                tags: ["#React", "#MongoDB", "#Express", "#Nodejs"],
-                image: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1748005446/c0wi8oz914fr16qduzhr.png",
-                wrapperClass: "kado-wrapper",
-                   timeline: 'October 2024 - November 2024',
-                tagClass: "kado-tag"
-              },
-              {
-                href: "https://todolist-brown-pi.vercel.app/",
-                tag: "Completed",
-                title: "To Do List",
-                desc: "Your Own Custom To-do-List, and you can customize it according to your preferences",
-                tags: ["#HTML", "#CSS", "#Javascript"],
-                image: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1748009620/nufv16guy3umtgbjr5ed.png",
-                wrapperClass: "todo-wrapper",
-                   timeline: 'July 2024',
-                tagClass: ""
               }
             ].map((proj, index) => (
               <motion.div
@@ -228,17 +181,17 @@ export default function HomePage() {
             viewport={{ once: true }}
             transition={{ duration: 1.2 }}
           >
-            <Link target="_blank" to={'https://x.com/DevLegend_'}>
+            <Link target="_blank" to={'https://x.com/anzz14___'}>
               <h2 className="social-item">
                 <Twitter color="gray" />
               </h2>
             </Link>
-            <Link target="_blank" to={'https://github.com/AyanAhmadKhan01'}>
+            <Link target="_blank" to={'https://github.com/anzz140'}>
               <h2 className="social-item">
                 <Github color="gray" />
               </h2>
             </Link>
-            <Link target="_blank" to={'https://www.linkedin.com/in/ayanahmadkhan/'}>
+            <Link target="_blank" to={'https://www.linkedin.com/in/anas-najam-78096b237/'}>
               <h2 className="social-item">
                 <Linkedin color="gray" />
               </h2>
