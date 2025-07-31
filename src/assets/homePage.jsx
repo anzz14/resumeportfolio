@@ -186,7 +186,7 @@ export default function HomePage() {
                 <Twitter color="gray" />
               </h2>
             </Link>
-            <Link target="_blank" to={'https://github.com/anzz140'}>
+            <Link target="_blank" to={'https://github.com/anzz14'}>
               <h2 className="social-item">
                 <Github color="gray" />
               </h2>
