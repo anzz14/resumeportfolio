@@ -89,15 +89,16 @@ export default function HomePage() {
           <div className="grid-container">
             {[
               {
-                href: "https://a-dmy-brand-omega.vercel.app/",
+                href: "https://flashcard-engine-k6mn.vercel.app/",
                 tag: "Completed",
-                title: "ADmyBRAND",
-                desc: "A modern brand management platform designed to help businesses create, manage, and showcase their brand identity effectively.",
-                tags: ["#NextJs","#Typescript", "#TailWind", "#Express", "#Nodejs", "#MongoDB"],
-                image: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1753974212/rvmxpnc5ch3nktubuxg4.png",
-                wrapperClass: "admybrand-wrapper",
-                timeline: 'January 2025',
-                tagClass: "admybrand-tag"
+                title: "Flash Card Engine",
+                desc: "A modern flash card engine powered by AI with enhanced insights to improve productivity.",
+                tags: ["#NextJs","#Typescript", "#TailWind", "#Express", "#Nodejs", "#Docker", "#Redis", "#Celery"],
+                image: "https://res.cloudinary.com/dt5qoqw6u/image/upload/v1776592475/hydlrqdpacmyttnywaw4.png",
+                wrapperClass: "flashcard-wrapper",
+                timeline: 'March 2026',
+                tagClass: "flashcard-tag",
+                accentClass: "flashcard"
               },
               {
                 href: "https://focusing-forward.vercel.app",
@@ -156,13 +157,13 @@ export default function HomePage() {
                         </h5>
                       ))}
                     </div>
-                    <img className="project-image" src={proj.image} alt="project" />
+                    {proj.image && <img className="project-image" src={proj.image} alt="project" />}
                   </div>
                 </a>
                <div className="timeline-container">
-  <div className="timeline-bar" />
+  <div className={`timeline-bar ${proj.accentClass ? `${proj.accentClass}-timeline-bar` : ''}`} />
   <motion.div
-    className="timeline-dot"
+    className={`timeline-dot ${proj.accentClass ? `${proj.accentClass}-timeline-dot` : ''}`}
     initial={{ scale: 0 }}
     whileInView={{ scale: 1 }}
     transition={{ duration: 0.6, type: "spring" }}

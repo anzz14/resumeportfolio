@@ -225,11 +225,27 @@ body {
   border: 1px solid white;
 }
 
+.flashcard-wrapper:hover {
+  border: 1px solid #f97316;
+}
+
 .admybrand-tag {
   float: right;
   padding: 10px;
   letter-spacing: -1px;
   color: white;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.flashcard-tag {
+  float: right;
+  padding: 10px;
+  letter-spacing: -1px;
+  color: #f97316;
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
@@ -416,6 +432,19 @@ border: 1px solid #13e8b6;
   opacity: 0.4;
   animation: pulseDot 2s infinite;
   z-index: -1;
+}
+
+.flashcard-timeline-bar {
+  background: linear-gradient(to bottom, #f97316, rgba(249, 115, 22, 0.05));
+}
+
+.flashcard-timeline-dot {
+  background-color: #f97316;
+  box-shadow: 0 0 10px #f97316;
+}
+
+.flashcard-timeline-dot::after {
+  background: #f97316;
 }
 
 .timeline-text {
