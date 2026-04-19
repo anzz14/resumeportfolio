@@ -169,9 +169,24 @@ body {
   transition: color 0.3s;
   color: rgba(255, 255, 255, 0.4);
   margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .social-item:hover {
   color: rgba(255, 255, 255, 0.9);
+}
+
+.social-item svg,
+.social-item img {
+  display: block;
+}
+
+.leetcode-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  opacity: 0.5  ;
 }
 
 
@@ -229,6 +244,10 @@ body {
   border: 1px solid #f97316;
 }
 
+.backend-wrapper:hover {
+  border: 1px solid #14b8a6;
+}
+
 .admybrand-tag {
   float: right;
   padding: 10px;
@@ -246,6 +265,18 @@ body {
   padding: 10px;
   letter-spacing: -1px;
   color: #f97316;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.backend-tag {
+  float: right;
+  padding: 10px;
+  letter-spacing: -1px;
+  color: #14b8a6;
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
@@ -445,6 +476,27 @@ border: 1px solid #13e8b6;
 
 .flashcard-timeline-dot::after {
   background: #f97316;
+}
+
+.backend-timeline-bar {
+  background: linear-gradient(to bottom, #14b8a6, rgba(20, 184, 166, 0.05));
+}
+
+.backend-timeline-dot {
+  background-color: #14b8a6;
+  box-shadow: 0 0 10px #14b8a6;
+}
+
+.backend-timeline-dot::after {
+  background: #14b8a6;
+}
+
+.backend-section-title {
+  margin-top: 2rem;
+}
+
+.backend-badge span {
+  color: #14b8a6;
 }
 
 .timeline-text {

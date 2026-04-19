@@ -46,7 +46,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 transition={{ duration: 1.2 }}
               >
-                Hey there! I'm Anas Najam, a passionate <span>MERN stack</span> developer.
+                Hey there! I'm Anas Najam, a developer covering <span>Python</span>, <span>Golang</span>, and <span>JavaScript</span> frameworks.
               </motion.p>
             )}
 
@@ -65,7 +65,7 @@ export default function HomePage() {
                 <a href="https://github.com/anzz14" target="_blank" rel="noopener noreferrer">
                   <Github size={18} />
                 </a>
-                <a href="https://www.linkedin.com/in/anas-najam-78096b237/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/njm-anas-dev/ " target="_blank" rel="noopener noreferrer">
                   <Linkedin size={18} />
                 </a>
               </motion.div>
@@ -175,6 +175,80 @@ export default function HomePage() {
             ))}
           </div>
 
+          <motion.h3
+            className="project-title backend-section-title"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.3 }}
+          >
+            Backend Projects <h2 className="badge-projects backend-badge">
+  <CalendarDays className="project-icon" size={18} />
+  2026 <span> March</span>
+</h2>
+          </motion.h3>
+
+          <div className="grid-container">
+            {[
+              {
+                href: "https://github.com/anzz14/Finance-Tracker-API",
+                tag: "Backend",
+                title: "Finance Tracker API",
+                desc: "A backend API for tracking income, expenses, categories, and reporting with FastAPI, Redis, Celery, and Docker.",
+                tags: ["#FastAPI", "#Redis", "#Celery", "#Docker", "#Python", "#PostgreSQL"],
+                wrapperClass: "backend-wrapper",
+                timeline: "March 2026",
+                tagClass: "backend-tag",
+                accentClass: "backend"
+              },
+              {
+                href: "https://github.com/anzz14/seo-analyzer",
+                tag: "Backend",
+                title: "SEO Analyzer",
+                desc: "A pipeline-based ingestion and analysis system for SEO signals built with FastAPI, Redis, Celery, and Docker.",
+                tags: ["#FastAPI", "#Redis", "#Celery", "#Docker", "#Pipelines", "#Ingestion"],
+                wrapperClass: "backend-wrapper",
+                timeline: "March 2026",
+                tagClass: "backend-tag",
+                accentClass: "backend"
+              }
+            ].map((proj, index) => (
+              <motion.div
+                key={index}
+                className="grid-item"
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.2, delay: index * 0.15 }}
+              >
+                <a href={proj.href} target="_blank" rel="noopener noreferrer">
+                  <div className={`grid-item-wrapper ${proj.wrapperClass}`}>
+                    <span className={proj.tagClass}>{proj.tag}</span>
+                    <h4 className="grid-item-title">{proj.title}</h4>
+                    <p className="grid-item-desc">{proj.desc}</p>
+                    <div className="tags-container">
+                      {proj.tags.map((tag, i) => (
+                        <h5 className={`tags ${proj.tagClass}`} key={i}>
+                          {tag}
+                        </h5>
+                      ))}
+                    </div>
+                  </div>
+                </a>
+                <div className="timeline-container">
+                  <div className={`timeline-bar ${proj.accentClass ? `${proj.accentClass}-timeline-bar` : ''}`} />
+                  <motion.div
+                    className={`timeline-dot ${proj.accentClass ? `${proj.accentClass}-timeline-dot` : ''}`}
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{ duration: 0.6, type: "spring" }}
+                  />
+                  <p className="timeline-text">{proj.timeline}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
           <motion.div
             className="social-container"
             initial={{ opacity: 0, y: 40 }}
@@ -195,6 +269,15 @@ export default function HomePage() {
             <Link target="_blank" to={'https://www.linkedin.com/in/anas-najam-78096b237/'}>
               <h2 className="social-item">
                 <Linkedin color="gray" />
+              </h2>
+            </Link>
+            <Link target="_blank" to={'https://leetcode.com/u/anzz14/'}>
+              <h2 className="social-item">
+                <img
+                  src="https://cdn.simpleicons.org/leetcode/FFFFFF"
+                  alt="LeetCode"
+                  className="leetcode-icon"
+                />
               </h2>
             </Link>
           </motion.div>
